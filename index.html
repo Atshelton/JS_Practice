@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <title>Hangman!</title>
+
+        <meta name='description' content='A simple game of hangman'>
+        <meta name='author' content='Jordan Kasper'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+
+        <link rel='stylesheet' type='text/css' href='hangman.css'>
+    </head>
+    <body>
+
+        <main>
+
+            <header>
+                <h1>Hangman!</h1>
+            </header>
+
+            <section>
+                <p id='result'></p>
+
+                <figure id='current-word'></figure>
+
+                <aside>
+                    (Missed: <span id='missed'></span>)
+                    Guessed: <span id='guesses'></span>
+                </aside>
+            </section>
+
+            <aside class='actions'>
+                <input type='text' id='letter' maxlength='1'>
+                <button id='guess'>Guess Letter</button>
+                <button id='new-game'>New Game</button>
+            </aside>
+
+            <footer>
+                <p>
+                    This game was created to practice JavaScript skills during a
+                    <a href='https://github.com/TIYDC/crash-course-js-hangman'>crash course</a> at
+                    <a href='http://theironyard.com'>The Iron Yard</a>.
+                </p>
+            </footer>
+
+        </main>
+
+        <script src='words.js'></script>
+        <script src='hangman.js'></script>
+    </body>
+</html>
